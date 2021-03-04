@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/631c295125.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>edit-menu-item</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="index.html">truYum <i class="fas fa-utensils"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-value="Menu" href="menu-item-list-admin.html">Menu</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4 text-left px-0">
+    <h4 class="display-4">Edit Menu Item</h4>
+  </div>
+
+  <div class="container">
+    <form id="form1">
+      <div class="form-group row">
+        <div class="col-7 pl-0">
+          <label for="title" class="font-weight-bold">Name</label>
+          <input type="text" name="title" class="form-control border border-dark" id="title1">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-xs-3">
+          <label for="price" class="font-weight-bold">Price (Rs.)</label>
+          <input class="form-control border border-dark" id="price1" type="text" name="price">
+        </div>
+        <div class="col-xs-2 ml-4">
+          <label for="inStock" class="font-weight-bold">Active</label>
+          <div class="radio">
+            <label class="radio-inline"><input type="radio" name="inStock" class=" border border-dark" id="inStock">Yes</label>
+            <label class="radio-inline"><input type="radio" name="inStock" class="ml-1  border border-dark" id="inStock">No</label>
+          </div>
+        </div>
+        <div class="col-xs-4 ml-4">
+          <label for="dateOfLaunch" class="font-weight-bold">Date of Launch</label>
+          <input class="form-control border border-dark" id="dateOfLaunch1" type="text" name="dateOfLaunch">
+        </div>
+        <div class="col-xs-4 ml-4">
+          <label for="category" class="font-weight-bold">Category</label>
+          <select class="form-control  border border-dark" id="category1" name="category" onchange="cat()">
+            <option></option>
+            <option>Main Course</option>
+            <option>Starters</option>
+            <option>Dessert</option>
+            <option>Drinks</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="checkbox">
+          <label class="font-weight-bold"><input type="checkbox" value="" name="freeDelivery" id="freeDelivery1" class="border border-dark mr-1">Free Delivery</label>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-2 pl-0">
+          <input type="submit" class="form-control btn btn-primary" id="savebtn">
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+  <footer class="bg-light text-left text-lg-start fixed-bottom">
+    <div class="text-left p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Copyright © 2019
+    </div>
+  </footer>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

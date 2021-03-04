@@ -1,0 +1,15 @@
+.navbar{ background: #28527A;}
+
+.nav-link{ color: #f4f4f4;}
+
+.navbar-brand{ color: #f4f4f4; }
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #f4f4f4 ; color: #28527A; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#f4f4f4 !important;}
+
+#hideIt{ color: white;}
